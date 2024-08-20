@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posizionamenti sticky</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 200vh; 
+        }
+
+        
+        .absolute-div {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background-color: #f0a;
+            padding: 20px;
+            color: white;
+        }
+
+        
+        .fixed-div {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #08f;
+            padding: 20px;
+            color: white;
+        }
+
+        
+        .container {
+            width: 200px;
+            margin: 50px auto;
+            background-color: #e0e0e0;
+            padding: 10px;
+        }
+
+        
+        .sticky-div {
+            
+            position: sticky;
+            top: 50px;
+            background-color: #fa0;
+            padding: 10px;
+            color: black;
+        }
+
+        
+        .content {
+            margin: 20px 0;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        
+        <div class="absolute-div">
+            Posizione Assoluta
+        </div>
+
+        
+        <div class="fixed-div">
+            Posizione Fissa
+        </div>
+
+        
+        <div class="container">
+            
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id quam ac velit fermentum cursus. Integer ut orci nec lacus ultricies tincidunt. Phasellus non purus sit amet dui lacinia mollis.
+            </div>
+
+            
+            <div class="sticky-div">
+                Posizione Sticky
+            </div>
+
+            
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id quam ac velit fermentum cursus. Integer ut orci nec lacus ultricies tincidunt. Phasellus non purus sit amet dui lacinia mollis. Cras volutpat, neque id scelerisque tincidunt, eros mi laoreet sapien, nec vestibulum mi lorem in elit. Suspendisse et tortor massa. Suspendisse vulputate velit sit amet dui malesuada varius. Mauris ornare vehicula eros sit amet tristique.
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
